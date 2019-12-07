@@ -131,8 +131,8 @@ int main(int argc, char *argv[])
             }
         }
         
-        gb.emuCycle();
-        if(gb.availableImage()){
+        while(!gb.availableImage()) gb.emuCycle();
+
           SDL_UpdateTexture
             (
             texture,
@@ -152,7 +152,6 @@ int main(int argc, char *argv[])
             SDL_Delay( 16 - 1000 * seconds );
           }
           start = SDL_GetPerformanceCounter();
-        }
 
 
     }
