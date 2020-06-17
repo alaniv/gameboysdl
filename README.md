@@ -1,3 +1,4 @@
+![Screenshot](Image.png)
 A small and incomplete GB Emulator.
 
 No audio. Missing some cart type support.
